@@ -12,6 +12,7 @@ import requests
    
 workerURL = "https://dokosen-worker.kitopitowada.workers.dev/sensors"
 # Use a service account
+'''
 cred = credentials.Certificate('dokosen-firebase-adminsdk.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
@@ -44,6 +45,7 @@ def updateData(status_num):
     doc_ref.update({
         "status": num2Status[status_num],
     })
+'''
 
 
 def get_args():
